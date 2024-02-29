@@ -12,26 +12,28 @@ int main() {
     std::cout<<"Unesite operaciju: ";
     std::cin>>operacija;
 
+    // Ovdje su koristeni redni brojevi char-ova umjesto '*', '+', itd...
+
     switch (operacija) {
-        case '*':
+        case 42:
             std::cout<<std::setw(7)<<broj1<<std::endl;
             std::cout<<std::setw(7)<<broj2<<" *"<<std::endl;
             std::cout<<"---------"<<std::endl;
             std::cout<<std::setw(7)<<broj1*broj2;
             break;
-        case '+':
+        case 43:
             std::cout<<std::setw(7)<<broj1<<std::endl;
             std::cout<<std::setw(7)<<broj2<<" +"<<std::endl;
             std::cout<<"---------"<<std::endl;
             std::cout<<std::setw(7)<<broj1+broj2;
             break;
-        case '/':
+        case 47:
             std::cout<<std::setw(7)<<broj1<<std::endl;
             std::cout<<std::setw(7)<<broj2<<" /"<<std::endl;
             std::cout<<"---------"<<std::endl;
-            std::cout<<std::setw(7)<<broj1/broj2;
+            std::cout<<std::setw(7)<<double(broj1)/broj2;
             break;
-        case '-':
+        case 45:
             std::cout<<std::setw(7)<<broj1<<std::endl;
             std::cout<<std::setw(7)<<broj2<<" -"<<std::endl;
             std::cout<<"---------"<<std::endl;
