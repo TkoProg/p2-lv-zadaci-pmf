@@ -18,7 +18,7 @@ double vratiKorijen(double *niz, int n) {
 
 int main() {
     // Nisam napravio da bude proizvoljan broj elemenata da korisnik unese jer mi je ruzno za testirati
-    double niz[]{-13, 6, 9};
+    double niz[]={-13, 6, 9};
     int n = 3;
     try {
         std::cout<<vratiKorijen(niz, n);
