@@ -10,11 +10,23 @@ void Obrni(Tip *pocetak, Tip *iza_kraja){
 template<typename Tip>
 void ObrniTeze(Tip *pocetak, Tip *iza_kraja){
     Tip *lijevi = pocetak;
-    Tip* desni = iza_kraja - 1;
+    Tip *desni = iza_kraja - 1;
     while (lijevi < desni) {
         Tip temp = *lijevi;
         *lijevi = *desni;
         *desni = temp;
+        // Moze i swap funkcija umjesto ovoga
+        lijevi++;
+        desni--;
+    }
+}
+
+template<typename Tip>
+void ObrniKojiMozeIteratore(Tip pocetak, Tip iza_kraja){
+    Tip lijevi = pocetak;
+    Tip desni = iza_kraja - 1;
+    while (lijevi < desni) {
+        swap(*lijevi, *desni); // Ovaj dio radi i za pokazivace i za iteratore
         // Moze i swap funkcija umjesto ovoga
         lijevi++;
         desni--;
