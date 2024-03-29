@@ -16,4 +16,5 @@ int main() {
     // Zanimljivo je ovo proslijedjivanje pointera u funkciju po referenci. Nisam znao da to moze!
     SmjestiMinIMax(niz,niz+7,Min,Max);
     std::cout<<"Min element je: "<<*Min<<"\n"<<"Max element je: "<<*Max;
+    return 0;
 }
