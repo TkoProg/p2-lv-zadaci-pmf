@@ -95,7 +95,7 @@ int brojRazlicithSlova(const std::string& s)  {
     return brojac;
 }
 
-bool f(const std::string& s1, const std::string& s2) {
+bool uporedi(const std::string& s1, const std::string& s2) {
     if (brojRazlicithSlova(s1) < brojRazlicithSlova(s2)) return true;
     if (brojRazlicithSlova(s1) > brojRazlicithSlova(s2)) return false;
     return s1 < s2;
@@ -110,7 +110,7 @@ int main() {
     for (int i(0); i < n; i++) {
         getline(std::cin, niz[i]);
     }
-    std::sort(niz, niz+n, f);
+    std::sort(niz, niz+n, uporedi);
     for (int i(0); i < n; i++) {
         std::cout<<niz[i]<<std::endl;
     }
